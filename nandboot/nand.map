@@ -1,0 +1,19 @@
+
+nand.elf:     file format elf32-tradlittlemips
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000e6c  80000000  80000000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .rodata       000001d0  80000e70  80000e70  00001e70  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .data         00000038  80001040  80001040  00002040  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .bss          00000090  80001080  80001080  00002080  2**4
+                  ALLOC
+  4 .pdr          000001e0  00000000  00000000  00002080  2**2
+                  CONTENTS, READONLY
+  5 .mdebug.abi32 00000000  00000000  00000000  00002260  2**0
+                  CONTENTS, READONLY
+  6 .comment      00000036  00000000  00000000  00002260  2**0
+                  CONTENTS, READONLY
